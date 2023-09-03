@@ -1,0 +1,12 @@
+
+1 - COMO INSTANCIAR UMA CLASSE EM PHP?
+        $aluno = new Aluno();
+
+2 - Orientação a Objetos é?
+        Relacionar o mundo real com os conceitos de programação        
+
+
+
+
+        renderizar na view:
+        localhost:8081/aula3/?controller=Estudante&acao=listar
