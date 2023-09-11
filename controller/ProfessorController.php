@@ -51,7 +51,7 @@ class ProfessorController {
 
         }elseif($_SERVER['REQUEST_METHOD'] == 'POST') {
             
-            $id = $_GET["id"];
+            $id = $_GET['id'];
             $nome = $_POST['nome'];
             $idade = $_POST['idade'];
 

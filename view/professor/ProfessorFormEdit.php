@@ -21,7 +21,7 @@ $professor = $_REQUEST['professor'];
 
 
     <div class="container">
-        <form method="POST" action="/<?php echo FOLDER; ?>/?controller=Professor&acao=editar">
+        <form method="POST" action="/<?php echo FOLDER; ?>/?controller=Professor&acao=editar&id=<?php echo $professor["id"]; ?>">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome </label>
             <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $professor["nome"];?>">

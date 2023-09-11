@@ -15,10 +15,16 @@
 
     <header class="bg-black text-white p-5 text-center m-0">
         <h1>Semana da Acessibilidade</h1>
-        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </header>
 
     <?php require_once  $_SERVER['DOCUMENT_ROOT'] . '/' . FOLDER . '/view/navbar.php'; ?>
+
+      <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+
     
 
 
@@ -77,6 +83,9 @@
             <?php } ?>
     </tbody>
     </table>
+
+
+    
 
 
     

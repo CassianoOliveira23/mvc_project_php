@@ -48,37 +48,39 @@
         <h1 class="container-fluid text-center m-3">Lista de Estudantes</h1>
 
 
-        <table class="table ">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Nome</th>
-      <th scope="col">Idade</th>
-      <th scope="col">Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-  <?php foreach($estudantes as $key => $estudanteAtual) { ?>
-            <tr>
-                <td><?php echo $estudanteAtual["id"]; ?></td>
-                <td><?php echo $estudanteAtual["nome"]; ?></td>
-                <td><?php echo $estudanteAtual["idade"]; ?></td>
-                <td>
-                  <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=editar&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-success">Editar</a>
-                </td>
-                <td>
-                  <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=excluir&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-danger">Excluir</a>
-                </td>
-            </tr>
-            <?php } ?>
-    </tbody>
-    </table>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Nome</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+          <?php foreach($estudantes as $key => $estudanteAtual) { ?>
+                    <tr>
+                        <td><?php echo $estudanteAtual["id"]; ?></td>
+                        <td><?php echo $estudanteAtual["nome"]; ?></td>
+                        <td><?php echo $estudanteAtual["idade"]; ?></td>
+                        <td>
+                          <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=editar&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-success">Editar</a>
+                        </td>
+                        <td>
+                          <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=excluir&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-danger">Excluir</a>
+                        </td>
+                    </tr>
+          <?php } ?>
+      </tbody>
+  </table>
 
 
     
    
 
     </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
