@@ -34,12 +34,47 @@ class EstudanteController {
 
             header('Location: http://localhost:8081/' .FOLDER. '/?controller=Estudante&acao=listar');
             exit();
-        }
-
-
-        
+        }  
     }
 
+
+
+    public function editar()
+    {
+        if($_SERVER['REQUEST_METHOD'] == 'GET') {
+            $id = $_GET["id"];
+
+            $estudanteModel = new EstudanteModel();
+            $estudante = $estudanteModel->buscarPeloId($id);
+
+            $_REQUEST['estudante'] = $estudante;
+
+            require_once  $_SERVER['DOCUMENT_ROOT'] . '/' . FOLDER . '/view' . self::CONTROLLER_FOLDER . '/EstudanteFormEdit.php';
+
+        }elseif($_SERVER['REQUEST_METHOD'] == 'POST') {
+            
+            $id = $_GET['id'];
+            $nome = $_POST['nome'];
+            $idade = $_POST['idade'];
+
+            $estudanteModel = new EstudanteModel();
+            $estudantes = $estudanteModel->atualizarModel($id, $nome, $idade);
+
+            header('Location: http://localhost:8081/' .FOLDER. '/?controller=Estudante&acao=listar');
+            exit();
+        }    
+
+    }
+
+    public function excluir()
+    {
+        $id = $_GET["id"];
+        $estudanteModel = new EstudanteModel();
+        $estudanteModel->excluirModel($id);
+
+        header('Location: http://localhost:8081/' .FOLDER. '/?controller=Estudante&acao=listar');
+        exit();
+    }
 
 }  
 
