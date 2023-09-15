@@ -20,10 +20,10 @@
 
     <?php require_once  $_SERVER['DOCUMENT_ROOT'] . '/' . FOLDER . '/view/navbar.php'; ?>
 
-      <!-- Button trigger modal -->
+      <!-- Button trigger modal 
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Launch static backdrop modal
-  </button>
+  </button>-->
 
     
 

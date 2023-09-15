@@ -14,3 +14,5 @@
 
 
         Senha simples no Git: lespaul23
+
+        Ctrl + Shift + h   -----> para fazer modificações em varios lugares 
