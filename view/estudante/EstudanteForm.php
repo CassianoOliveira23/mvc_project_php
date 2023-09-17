@@ -16,7 +16,7 @@
 
 
 
-    <div class="container">
+    <div class="container mt-5">
     <form method="POST" action="/<?php echo FOLDER; ?>/?controller=Estudante&acao=salvar">
   <div class="mb-3">
     <label for="nome" class="form-label">Nome </label>
