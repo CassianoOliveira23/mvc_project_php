@@ -27,7 +27,7 @@
 
     </div>
     <br>
-    <div class="cjustify-content-center m-5 text-center">
+    <div class="justify-content-center m-5 text-center">
     <a href="/<?php echo FOLDER; ?>/?controller=Estudante&acao=salvar" class="btn btn-dark">Cadastrar Estudante</a>
 
     </div>
