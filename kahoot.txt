@@ -8,11 +8,13 @@
 
 
 
-        renderizar na view:
-        localhost:8081/aula3/?controller=Estudante&acao=listar
+       
 
 
 
         Senha simples no Git: lespaul23
 
         Ctrl + Shift + h   -----> para fazer modificações em varios lugares 
+
+         renderizar na view:
+        localhost:8081/aula3/?controller=Estudante&acao=listar
