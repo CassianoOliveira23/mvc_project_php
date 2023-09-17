@@ -20,7 +20,7 @@ $professor = $_REQUEST['professor'];
 
 
 
-    <div class="container">
+    <div class="container mt-5 mb-5">
         <form method="POST" action="/<?php echo FOLDER; ?>/?controller=Professor&acao=editar&id=<?php echo $professor["id"]; ?>">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome </label>
@@ -35,6 +35,16 @@ $professor = $_REQUEST['professor'];
         </form>
 
     </div>
+
+    
+
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     
 </body>

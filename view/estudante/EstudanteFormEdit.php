@@ -20,7 +20,7 @@ $estudante = $_REQUEST['estudante'];
 
 
 
-    <div class="container">
+    <div class="container mt-5 mb-5">
         <form method="POST" action="/<?php echo FOLDER; ?>/?controller=Estudante&acao=editar&id=<?php echo $estudante["id"]; ?>">
 
           <div class="mb-3">

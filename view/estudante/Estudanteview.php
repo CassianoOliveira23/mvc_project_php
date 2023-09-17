@@ -27,7 +27,7 @@
 
     </div>
     <br>
-    <div class="justify-content-center m-5 text-center">
+    <div class="cjustify-content-center m-5 text-center">
     <a href="/<?php echo FOLDER; ?>/?controller=Estudante&acao=salvar" class="btn btn-dark">Cadastrar Estudante</a>
 
     </div>
@@ -44,14 +44,14 @@
            
            
 
-    <div class="container mt-5">
-        <h1 class="container-fluid text-center m-3">Lista de Estudantes</h1>
+    <div class="container mt-5 mb-5">
+        <h1 class="container text-center mb-5">Lista de Estudantes</h1>
 
 
   <table class="table">
       <thead>
         <tr>
-          <th scope="col"></th>
+          <th scope="col">ID</th>
           <th scope="col">Nome</th>
           <th scope="col">Idade</th>
           <th scope="col">Ações</th>
@@ -79,6 +79,28 @@
    
 
     </div>
+
+
+
+    <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+
+    <div class="container">
+        <h4>Desenvolvedor Full stack Cassiano Oliveira</h4>
+        <p>Fone: (xx) xxxx-xxxx</p>
+
+    </div>
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
 
 
 

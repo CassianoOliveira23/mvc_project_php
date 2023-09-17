@@ -20,16 +20,12 @@
 
     <?php require_once  $_SERVER['DOCUMENT_ROOT'] . '/' . FOLDER . '/view/navbar.php'; ?>
 
-      <!-- Button trigger modal 
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>-->
-
+  
     
 
 
     <div class="contrainer-fluid  m-5 text-center">
-        <img src="/<?php echo FOLDER; ?>/imagens/bb.jpeg" class="img-center" alt="Semana da Acessibilidade escrito no centro com fundo azul ao lado direito o logo do TRE-BA (uma esfera branca da bandeira do brasil com as constelações, envolta de um retangulo) e a baixo e a direita está uma animação/desenho de 5 pessoas, sendo um homen idoso com bengala, um homen jovem negro que possui uma perna mecânica, um homem cadeirante e uma mulher com muletas ">
+        <img src="/<?php echo FOLDER; ?>/imagens/bb.jpeg" class="img-center" alt="Semana da Acessibilidade escrito no centro com fundo azul ao lado direito o logo do TRE-BA (uma esfera branca da bandeira do brasil com as constelações, envolta de um retangulo) e a baixo e a direita está uma animação/desenho de 5 pessoas, sendo um homen idoso com bengala, um homen jovem que possui uma perna mecânica, um homem cadeirante e uma mulher com muletas ">
 
     </div>
     <br>
@@ -55,14 +51,14 @@
            
            
 
-    <div class="container mt-5">
-        <h1 class="container-fluid text-center m-3">Lista de Professores</h1>
+    <div class="container mt-5 mb-5">
+        <h1 class="container-fluid text-center mb-5">Lista de Professores</h1>
 
 
         <table class="table">
   <thead>
     <tr>
-      <th scope="col"></th>
+      <th scope="col">ID</th>
       <th scope="col">Nome</th>
       <th scope="col">Idade</th>
     </tr>
@@ -92,6 +88,26 @@
    
 
     </div>
+
+    <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+
+    <div class="container">
+        <h4>Desenvolvedor Full stack Cassiano Oliveira</h4>
+        <p>Fone: (xx) xxxx-xxxx</p>
+
+    </div>
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
