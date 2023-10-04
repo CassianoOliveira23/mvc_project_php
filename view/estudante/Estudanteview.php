@@ -20,7 +20,7 @@
 
 
 
-<!-- Modal -->
+<!-- Modal  alert -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -32,8 +32,8 @@
                     Você deseja realmente excluir este registro?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close-modal">Fechar</button>
-                    <button type="button" class="btn btn-danger" id="delete-button">EXCLUIR</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="close-modal">Fechar</button>
+                    <button type="button" class="btn btn-danger" id="delete-button">Excluir</button>
                 </div>
             </div>
         </div>
@@ -54,10 +54,10 @@
         </div>
     </div>
 
- 
+    
+
     <header class="bg-black text-white p-5 text-center m-0">
         <h1>Semana da Acessibilidade</h1>
-        
     </header>
 
     <!-- Navbar -->
@@ -71,28 +71,21 @@
         <img src="/<?php echo FOLDER; ?>/imagens/bb.jpeg" class="img-center" alt="Semana da Acessibilidade escrito no centro com fundo azul ao lado direito o logo do TRE-BA (uma esfera branca da bandeira do brasil com as constelações, envolta de um retangulo) e a baixo e a direita está uma animação/desenho de 5 pessoas, sendo um homen idoso com bengala, um homen jovem negro que possui uma perna mecânica, um homem cadeirante e uma mulher com muletas ">
 
     </div>
+
     <br>
+
+    <!-- Botão de Cadastro -->
     <div class="justify-content-center m-5 text-center">
     <a href="/<?php echo FOLDER; ?>/?controller=Estudante&acao=salvar" class="btn btn-dark">Cadastrar Estudante</a>
-
     </div>
     
-    
 
-    
-    
-
-        
-          
-    
-           
-           
-           
 
     <div class="container mt-5 mb-5">
         <h1 class="container text-center mb-5">Lista de Estudantes</h1>
 
 
+        <!-- Tabela -->
       <table class="table">
           <thead>
             <tr>
@@ -128,35 +121,32 @@
       </table>
 
 
-      <script>
-        $("#delete-button").on("click", function() {
-            let idUsuario = $(this).attr('data-id');
+        <!-- Alert Modal -->
+        <script>
+            $("#delete-button").on("click", function() {
+                let idUsuario = $(this).attr('data-id');
 
-            let url = "/<?php echo FOLDER; ?>/?controller=Estudante&acao=excluir&id=" + idUsuario;
-            $.get(url, function(data) {
-                $("#close-modal").click();
-                var myModal = new bootstrap.Modal(document.getElementById('userDeleted'))
-                myModal.show();
+                let url = "/<?php echo FOLDER; ?>/?controller=Estudante&acao=excluir&id=" + idUsuario;
+                $.get(url, function(data) {
+                    $("#close-modal").click();
+                    var myModal = new bootstrap.Modal(document.getElementById('userDeleted'))
+                    myModal.show();
 
+                });
+                console.log("O usuario para ser deletado é: " + idUsuario);
             });
-            console.log("O usuario para ser deletado é: " + idUsuario);
-        });
 
-        $("#userDeleted").on("hidden.bs.modal", function() {
-            location.reload();
-        });
+            $("#userDeleted").on("hidden.bs.modal", function() {
+                location.reload();
+            });
 
-        $(".select-user-to-delete").on("click", function() {
+            $(".select-user-to-delete").on("click", function() {
 
-            $("#delete-button").attr("data-id", $(this).attr('data-id'));
-            console.log("O usuário escolheu o estudante que talvez possa ser deletado");
-        });
-    </script>
-
-
-    
-   
-
+                $("#delete-button").attr("data-id", $(this).attr('data-id'));
+                console.log("O usuário escolheu o estudante que talvez possa ser deletado");
+            });
+        </script>
+        
     </div>
 
 
@@ -166,8 +156,8 @@
     <div class="container p-4 pb-0">
 
     <div class="container">
-        <h4>Desenvolvedor Full stack Cassiano Oliveira</h4>
-        <p>Fone: (xx) xxxx-xxxx</p>
+        <h4>Desenvolvedor Full-Stack Cassiano Oliveira</h4>
+        <p>Fone: (51) 98934-0681</p>
 
     </div>
     </div>

@@ -19,11 +19,7 @@
 
 
     <div class="conteiner m-5 text-center">
-        <h1>Programação Web</h1>
-        <br>
-        <br>
-        <p>Acadêmico: Cassiano Oliveira de Borba</p>
-        <p>Professor: Lucas Saraiva</p>
+        <h1>PROGRAMAÇÃO WEB</h1>
     </div>
     
 
@@ -52,8 +48,8 @@
     <div class="container p-4 pb-0">
 
     <div class="container">
-        <h4>Desenvolvedor Full stack Cassiano Oliveira</h4>
-        <p>Fone: (xx) xxxx-xxxx</p>
+        <h4>Desenvolvedor Full-Stack Cassiano Oliveira</h4>
+        <p>Fone: (51) 98934-0681</p>
 
     </div>
     </div>

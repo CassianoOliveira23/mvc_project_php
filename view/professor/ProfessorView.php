@@ -171,8 +171,8 @@
     <div class="container p-4 pb-0">
 
     <div class="container">
-        <h4>Desenvolvedor Full stack Cassiano Oliveira</h4>
-        <p>Fone: (xx) xxxx-xxxx</p>
+        <h4>Desenvolvedor Full-Stack Cassiano Oliveira</h4>
+        <p>Fone: (51) 98934-0681</p>
 
     </div>
     </div>
