@@ -89,10 +89,10 @@
       <table class="table">
           <thead>
             <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Idade</th>
-                  <th scope="col">Ações</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Ações</th>
             </tr>
           </thead>
 
