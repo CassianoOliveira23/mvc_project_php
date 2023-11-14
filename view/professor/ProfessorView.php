@@ -171,7 +171,7 @@
     <div class="container p-4 pb-0">
 
     <div class="container">
-        <h4>Desenvolvedor Full-Stack Cassiano Oliveira</h4>
+        <h4>Desenvolvedor Full Stack Cassiano Oliveira</h4>
         <p>Fone: (51) 98934-0681</p>
 
     </div>
