@@ -103,7 +103,7 @@
                             <td><?php echo $estudanteAtual["nome"]; ?></td>
                             <td><?php echo $estudanteAtual["idade"]; ?></td>
                             <td>
-                              <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=editar&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-success">Edit</a>
+                              <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=editar&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-success">Edit  </a>
                             </td>
                             <td>
                               <!--<a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=excluir&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-danger">Excluir</a> -->
