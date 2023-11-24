@@ -5,13 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Estudantes</title>
+    <title>Students</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">     <!--Link do CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">     <!--Link CSS-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!--Link do JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!--Link JavaScript-->
 
-    <!--Link do Jquery--> 
+    <!--Link Jquery--> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
@@ -25,15 +25,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Atenção</h1>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Warning</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Você deseja realmente excluir este registro?
+                    Are you sure that you want to delete this registration?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="close-modal">Fechar</button>
-                    <button type="button" class="btn btn-danger" id="delete-button">Excluir</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="close-modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
                 </div>
             </div>
         </div>
@@ -44,11 +44,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="userDeletedLabel">Parabéns</h1>
+                    <h1 class="modal-title fs-5" id="userDeletedLabel">Congratulations!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Usuário deletado com sucesso!!!
+                    Student deleted successfully
                 </div>
             </div>
         </div>
@@ -57,18 +57,18 @@
     
 
     <header class="bg-black text-white p-5 text-center m-0">
-        <h1>Semana da Acessibilidade</h1>
+        <h1>MVC Model</h1>
     </header>
 
     <!-- Navbar -->
     <?php require_once  $_SERVER['DOCUMENT_ROOT'] . '/' . FOLDER . '/view/navbar.php'; ?>
 
       
-    
+
 
 
     <div class="contrainer-fluid text-center m-5">
-        <img src="/<?php echo FOLDER; ?>/imagens/bb.jpeg" class="img-center" alt="Semana da Acessibilidade escrito no centro com fundo azul ao lado direito o logo do TRE-BA (uma esfera branca da bandeira do brasil com as constelações, envolta de um retangulo) e a baixo e a direita está uma animação/desenho de 5 pessoas, sendo um homen idoso com bengala, um homen jovem negro que possui uma perna mecânica, um homem cadeirante e uma mulher com muletas ">
+        <img src="/<?php echo FOLDER; ?>/imagens/bb.jpeg" class="img-center" alt="Semana da Acessibilidade escrito no centro com fundo azul ao lado direito o logo do TRE-BA (uma esfera branca da bandeira do brasil com as constelações, envolta de um retangulo) e a baixo e a direita está uma animação/desenho de 5 pessoas, sendo um homen idoso com bengala, um homen jovem que possui uma perna mecânica, um homem cadeirante e uma mulher com muletas ">
 
     </div>
 
@@ -76,13 +76,13 @@
 
     <!-- Botão de Cadastro -->
     <div class="justify-content-center m-5 text-center">
-    <a href="/<?php echo FOLDER; ?>/?controller=Estudante&acao=salvar" class="btn btn-dark">Cadastrar Estudante</a>
+    <a href="/<?php echo FOLDER; ?>/?controller=Estudante&acao=salvar" class="btn btn-dark">Register Student</a>
     </div>
     
 
 
     <div class="container mt-5 mb-5">
-        <h1 class="container text-center mb-5">Lista de Estudantes</h1>
+        <h1 class="container text-center mb-5">Students</h1>
 
 
         <!-- Tabela -->
@@ -90,9 +90,9 @@
           <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Idade</th>
-                <th scope="col">Ações</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Actions</th>
             </tr>
           </thead>
 
@@ -103,7 +103,7 @@
                             <td><?php echo $estudanteAtual["nome"]; ?></td>
                             <td><?php echo $estudanteAtual["idade"]; ?></td>
                             <td>
-                              <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=editar&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-success">Editar</a>
+                              <a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=editar&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-success">Edit</a>
                             </td>
                             <td>
                               <!--<a href="/<?php echo FOLDER; ?>?controller=Estudante&acao=excluir&id=<?php echo $estudanteAtual['id']; ?>" class="btn btn-danger">Excluir</a> -->
@@ -111,7 +111,7 @@
                               
 
                               <!-- Button trigger modal -->
-                              <button type="button" class="btn btn-danger select-user-to-delete" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="<?php echo $estudanteAtual['id']; ?>">Excluir</button>
+                              <button type="button" class="btn btn-danger select-user-to-delete" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="<?php echo $estudanteAtual['id']; ?>">Delete</button>
 
                               
                             </td>
@@ -156,7 +156,7 @@
     <div class="container p-4 pb-0">
 
     <div class="container">
-        <h4>Desenvolvedor Full Stack Cassiano Oliveira</h4>
+        <h4>Full Stack Developer Cassiano Oliveira</h4>
         <p>Fone: (51) 98934-0681</p>
 
     </div>
