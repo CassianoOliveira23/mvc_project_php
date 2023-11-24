@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>navbar</title>
 </head>
 <body>
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -18,10 +18,10 @@
                     <a class="nav-link active" aria-current="page" href="/<?php echo FOLDER; ?>/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/<?php echo FOLDER; ?>/?controller=Estudante&acao=listar">Estudantes</a>
+                    <a class="nav-link" href="/<?php echo FOLDER; ?>/?controller=Estudante&acao=listar">Students</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/<?php echo FOLDER; ?>/?controller=Professor&acao=listar">Professores</a>
+                    <a class="nav-link" href="/<?php echo FOLDER; ?>/?controller=Professor&acao=listar">Professors</a>
                 </li>
                 
                 </ul>
