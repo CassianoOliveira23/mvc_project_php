@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
@@ -19,36 +19,21 @@
 
 
     <div class="conteiner m-5 text-center">
-        <h1>PROGRAMAÇÃO WEB</h1>
+        <h1>Web Development</h1>
     </div>
     
 
     
     <div class="contrainer-fluid  m-5 text-center">
         <img src="/<?php echo FOLDER; ?>/imagens/php2.png" class="img-center" alt="imagem do PHP">
-
     </div>
-
-
-
-
-
-
-
-
-
- 
-  
-
-
-       
 
     <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
 
     <div class="container">
-        <h4>Desenvolvedor Full-Stack Cassiano Oliveira</h4>
+        <h4>Full Stack Developer Cassiano Oliveira</h4>
         <p>Fone: (51) 98934-0681</p>
 
     </div>
