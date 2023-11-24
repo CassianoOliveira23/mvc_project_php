@@ -63,50 +63,28 @@
     <!-- Navbar -->
     <?php require_once  $_SERVER['DOCUMENT_ROOT'] . '/' . FOLDER . '/view/navbar.php'; ?>
 
-    
-
-  
-    
-
-
-    <div class="contrainer-fluid  m-5 text-center">
-        <img src="/<?php echo FOLDER; ?>/imagens/bb.jpeg" class="img-center" alt="Semana da Acessibilidade escrito no centro com fundo azul ao lado direito o logo do TRE-BA (uma esfera branca da bandeira do brasil com as constelações, envolta de um retangulo) e a baixo e a direita está uma animação/desenho de 5 pessoas, sendo um homen idoso com bengala, um homen jovem que possui uma perna mecânica, um homem cadeirante e uma mulher com muletas ">
-
+    <div class="contrainer-fluid text-center m-1">
+        <img src="/<?php echo FOLDER; ?>/imagens/php2.png" class="img-center" alt="PHP programing language logo">
     </div>
+
+
     <br>
     <div class="justify-content-center m-5 text-center">
       <a  href="/<?php echo FOLDER; ?>/?controller=Professor&acao=salvar" class="btn btn-dark">Register Professor</a>
       
-    </div>
-
-     
-    
-
-    
-    
-    
-
-    
-    
-
-        
-          
-    
-           
-           
-           
+    </div>  
 
     <div class="container mt-5 mb-5">
-        <h1 class="container-fluid text-center mb-5">Lista de Professores</h1>
+        <h1 class="container-fluid text-center mb-5">Professors</h1>
 
 
       <table class="table">
           <thead>
             <tr>
                   <th scope="col">ID</th>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Idade</th>
-                  <th scope="col">Ações</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Age</th>
+                  <th scope="col">Actions</th>
             </tr>
           </thead>
 
@@ -117,14 +95,14 @@
                               <td><?php echo $professorAtual["nome"]; ?></td>
                               <td><?php echo $professorAtual["idade"]; ?></td>
                               <td>
-                                <a href="/<?php echo FOLDER; ?>?controller=Professor&acao=editar&id=<?php echo $professorAtual['id']; ?>" class="btn btn-success">Editar</a>
+                                <a href="/<?php echo FOLDER; ?>?controller=Professor&acao=editar&id=<?php echo $professorAtual['id']; ?>" class="btn btn-success">Edit</a>
                               </td>
                               <td>
                                 <!--<a href="/<?php echo FOLDER; ?>?controller=Professor&acao=excluir&id=<?php echo $professorAtual['id']; ?>" class="btn btn-danger">Excluir</a>-->
 
                                
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-danger select-user-to-delete" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="<?php echo $professorAtual['id']; ?>">Excluir</button>
+                                <button type="button" class="btn btn-danger select-user-to-delete" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="<?php echo $professorAtual['id']; ?>">Delete</button>
                               </td>
                         </tr>
               <?php } ?>
@@ -157,21 +135,15 @@
         });
     </script>
 
-
-    
-
-
-    
-   
-
     </div>
+
 
     <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
 
     <div class="container">
-        <h4>Desenvolvedor Full Stack Cassiano Oliveira</h4>
+        <h4>Full Stack Developer Cassiano Oliveira</h4>
         <p>Fone: (51) 98934-0681</p>
 
     </div>

@@ -67,9 +67,8 @@
 
 
 
-    <div class="contrainer-fluid text-center m-5">
-        <img src="/<?php echo FOLDER; ?>/imagens/bb.jpeg" class="img-center" alt="Semana da Acessibilidade escrito no centro com fundo azul ao lado direito o logo do TRE-BA (uma esfera branca da bandeira do brasil com as constelações, envolta de um retangulo) e a baixo e a direita está uma animação/desenho de 5 pessoas, sendo um homen idoso com bengala, um homen jovem que possui uma perna mecânica, um homem cadeirante e uma mulher com muletas ">
-
+    <div class="contrainer-fluid text-center m-1">
+        <img src="/<?php echo FOLDER; ?>/imagens/php2.png" class="img-center" alt="PHP programing language logo">
     </div>
 
     <br>
@@ -81,7 +80,7 @@
     
 
 
-    <div class="container mt-5 mb-5">
+    <div class="container mt-2 mb-5">
         <h1 class="container text-center mb-5">Students</h1>
 
 

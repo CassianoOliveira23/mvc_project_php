@@ -25,7 +25,7 @@
 
     
     <div class="contrainer-fluid  m-5 text-center">
-        <img src="/<?php echo FOLDER; ?>/imagens/php2.png" class="img-center" alt="imagem do PHP">
+        <img src="/<?php echo FOLDER; ?>/imagens/php2.png" class="img-center" alt="PHP logo">
     </div>
 
     <footer class="bg-dark text-center text-white">
