@@ -34,7 +34,7 @@
                     Are you sure that you want to delete this registration?
               </div>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="close-modal">Close</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="close-modal">Close</button>
                   <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
               </div>
           </div>
