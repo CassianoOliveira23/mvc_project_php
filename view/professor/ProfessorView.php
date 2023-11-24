@@ -5,15 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Professores</title>
+    <title>Professors</title>
 
-    <!--Link do CSS-->
+    <!--Link CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">  
 
-    <!--Link do JS--> 
+    <!--Link JS--> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
 
-    <!--Link do Jquery--> 
+    <!--Link Jquery--> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
@@ -27,15 +27,15 @@
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Atenção</h1>
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Warning</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  Você deseja realmente excluir este registro?
+                    Are you sure that you want to delete this registration?
               </div>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="close-modal">Fechar</button>
-                  <button type="button" class="btn btn-danger" id="delete-button">Excluir</button>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="close-modal">Close</button>
+                  <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
               </div>
           </div>
       </div>
@@ -46,18 +46,18 @@
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="userDeletedLabel">Parabéns!</h1>
+                  <h1 class="modal-title fs-5" id="userDeletedLabel">Congratulations!</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  Usuário deletado com sucesso!!!
+                    Student deleted successfully!   
               </div>
           </div>
       </div>
   </div>
 
     <header class="bg-black text-white p-5 text-center m-0">
-        <h1>Semana da Acessibilidade</h1>
+        <h1>MVC Model</h1>
     </header>
 
     <!-- Navbar -->
@@ -75,7 +75,7 @@
     </div>
     <br>
     <div class="justify-content-center m-5 text-center">
-      <a  href="/<?php echo FOLDER; ?>/?controller=Professor&acao=salvar" class="btn btn-dark">Cadastrar Professor</a>
+      <a  href="/<?php echo FOLDER; ?>/?controller=Professor&acao=salvar" class="btn btn-dark">Register Professor</a>
       
     </div>
 
